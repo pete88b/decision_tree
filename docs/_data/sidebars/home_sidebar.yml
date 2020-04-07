@@ -15,6 +15,15 @@ entries:
     - output: web,pdf
       title: Data
       url: /data
+    - output: web,pdf
+      title: Models
+      url: /models
+    - output: web,pdf
+      title: Title
+      url: /test_tag
+    - output: web,pdf
+      title: Export with module
+      url: /export_with_module
     output: web
     title: decision_tree
   output: web

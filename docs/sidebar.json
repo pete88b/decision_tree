@@ -2,6 +2,9 @@
   "decision_tree": {
     "Overview": "/",
     "core": "/core",
-    "Data": "/data"
+    "Data": "/data",
+    "Models": "/models",
+    "Title": "/test_tag",
+    "Export with module": "/export_with_module"
   }
 }

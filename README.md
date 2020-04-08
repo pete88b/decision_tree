@@ -4,7 +4,7 @@
 
 ## Install
 
-`pip install decision_tree` but ... if you're looking for a production ready tree ensemble/random forest, you really should use https://scikit-learn.org/ instead (o:
+I don't think we want to create a pip install for this project ... if you're looking for a production ready tree ensemble/random forest, you really should use https://scikit-learn.org/ instead (o:
 
 ## How to use
 
@@ -109,7 +109,7 @@ time_fit(3125, 750)
 ![png](docs/images/output_8_1.png)
 
 
-# Tree Ensemble project set-up
+# Tree Ensemble dev project set-up
 
 You can create a `tree_ensemble` anaconda enviroment with the following;
 <pre>
@@ -119,3 +119,5 @@ pip install nbdev
 pip install pandas
 pip install matplotlib
 </pre>
+
+Note: If you want to use this project to try out changes to the nbdev project, use an editable nbdev install. i.e. git clone nbdev then, `pip install -e nbdev`

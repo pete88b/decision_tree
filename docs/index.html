@@ -35,7 +35,7 @@ description: "A decision tree ensemble implementation (see: http://course18.fast
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install decision_tree</code> but ... if you're looking for a production ready tree ensemble/random forest, you really should use <a href="https://scikit-learn.org/">https://scikit-learn.org/</a> instead (o:</p>
+<p>I don't think we want to create a pip install for this project ... if you're looking for a production ready tree ensemble/random forest, you really should use <a href="https://scikit-learn.org/">https://scikit-learn.org/</a> instead (o:</p>
 
 </div>
 </div>
@@ -277,14 +277,15 @@ loss 0.5752066377812673
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Tree-Ensemble-project-set-up">Tree Ensemble project set-up<a class="anchor-link" href="#Tree-Ensemble-project-set-up"> </a></h1><p>You can create a <code>tree_ensemble</code> anaconda enviroment with the following;</p>
+<h1 id="Tree-Ensemble-dev-project-set-up">Tree Ensemble dev project set-up<a class="anchor-link" href="#Tree-Ensemble-dev-project-set-up"> </a></h1><p>You can create a <code>tree_ensemble</code> anaconda enviroment with the following;</p>
 <pre>
 conda create -n tree_ensemble python=3.7 -y
 conda activate tree_ensemble
 pip install nbdev
 pip install pandas
 pip install matplotlib
-</pre>
+</pre><p>Note: If you want to use this project to try out changes to the nbdev project, use an editable nbdev install. i.e. git clone nbdev then, <code>pip install -e nbdev</code></p>
+
 </div>
 </div>
 </div>

@@ -121,3 +121,19 @@ pip install matplotlib
 </pre>
 
 Note: If you want to use this project to try out changes to the nbdev project, use an editable nbdev install. i.e. git clone nbdev then, `pip install -e nbdev`
+
+## git commands
+
+### Show local changes
+`git status`
+
+`git diff`
+
+### Stage all changes 
+`git add -A`
+
+### Commmit all staged changes
+`git commit -m "message"`
+
+### Push changes to github
+`git push`

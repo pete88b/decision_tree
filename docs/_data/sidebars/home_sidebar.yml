@@ -19,7 +19,7 @@ entries:
       title: Models
       url: /models
     - output: web,pdf
-      title: Title
+      title: Notebook to test nbdev test flags
       url: /test_tag
     - output: web,pdf
       title: Export with module

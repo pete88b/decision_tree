@@ -22,15 +22,19 @@ index = {"split_array": "00_core.ipynb",
          "print_tree": "20_models.ipynb",
          "predict_row": "20_models.ipynb",
          "TreeEnsemble": "20_models.ipynb",
-         "export_from_data_to_core": "40_export_with_module.ipynb",
-         "exports_from_data_to_core": "40_export_with_module.ipynb",
-         "exporti_from_data_to_core": "40_export_with_module.ipynb",
-         "fn_in_export_with_module": "40_export_with_module.ipynb"}
+         "export_from_data_to_core": "40_test_export.ipynb",
+         "exports_from_data_to_core": "40_test_export.ipynb",
+         "exporti_from_data_to_core": "40_test_export.ipynb",
+         "export_no_module": "40_test_export.ipynb",
+         "exporti_no_module": "40_test_export.ipynb",
+         "exports_no_module": "40_test_export.ipynb",
+         "AnotherTestClass": "50_test_doc.ipynb"}
 
 modules = ["core.py",
            "data.py",
            "models.py",
-           "export_with_module.py"]
+           "export_with_module.py",
+           "test/doc.py"]
 
 doc_url = "https://pete88b.github.io/decision_tree/"
 

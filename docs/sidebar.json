@@ -4,7 +4,8 @@
     "core": "/core",
     "Data": "/data",
     "Models": "/models",
-    "Notebook to test nbdev test flags": "/test_tag",
-    "Export with module": "/export_with_module"
+    "Test nbdev test flags": "/test_flag",
+    "Test nbdev export flags": "/test_export",
+    "Test nbdev doc flags": "/test_doc"
   }
 }

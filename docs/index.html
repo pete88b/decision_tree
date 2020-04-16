@@ -29,6 +29,17 @@ description: "A decision tree ensemble implementation (see: http://course18.fast
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>The main goals for this project are to;</p>
+<ul>
+<li>learn how to write a tree ensemble and some interpretation functions</li>
+<li>have a realistic project to learn nbdev and try things like converting nbdev flags to magics (<a href="https://forums.fast.ai/t/can-we-have-tab-completion-and-help-for-nbdev-flags/">https://forums.fast.ai/t/can-we-have-tab-completion-and-help-for-nbdev-flags/</a>)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
 </div>
 </div>
@@ -277,14 +288,14 @@ loss 0.5752066377812673
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Tree-Ensemble-dev-project-set-up">Tree Ensemble dev project set-up<a class="anchor-link" href="#Tree-Ensemble-dev-project-set-up"> </a></h1><p>You can create a <code>tree_ensemble</code> anaconda enviroment with the following;</p>
+<h1 id="Decision-Tree-dev-project-set-up">Decision Tree dev project set-up<a class="anchor-link" href="#Decision-Tree-dev-project-set-up"> </a></h1><p>You can create a <code>decision_tree</code> anaconda enviroment with the following;</p>
 <pre>
-conda create -n tree_ensemble python=3.7 -y
-conda activate tree_ensemble
+conda create -n decision_tree python=3.7 -y
+conda activate decision_tree
 pip install nbdev
 pip install pandas
 pip install matplotlib
-</pre><p>Note: If you want to use this project to try out changes to the nbdev project, use an editable nbdev install. i.e. git clone nbdev then, <code>pip install -e nbdev</code></p>
+</pre><p>Note: If you want to use this project to try out changes to the nbdev project, use an editable nbdev install. i.e. git clone nbdev then, <code>pip install -e nbdev</code> - assuming you are in the parent folder of nbdev.</p>
 
 </div>
 </div>

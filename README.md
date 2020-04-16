@@ -2,6 +2,10 @@
 > A decision tree ensemble implementation (see: http://course18.fast.ai).
 
 
+The main goals for this project are to;
+- learn how to write a tree ensemble and some interpretation functions
+- have a realistic project to learn nbdev and try things like converting nbdev flags to magics (https://forums.fast.ai/t/can-we-have-tab-completion-and-help-for-nbdev-flags/)
+
 ## Install
 
 I don't think we want to create a pip install for this project ... if you're looking for a production ready tree ensemble/random forest, you really should use https://scikit-learn.org/ instead (o:
@@ -87,7 +91,7 @@ time_fit(1e4, 750, n_trees=50)
 
 
 
-![png](docs/images/output_7_1.png)
+![png](docs/images/output_8_1.png)
 
 
 ```python
@@ -106,21 +110,21 @@ time_fit(3125, 750)
 
 
 
-![png](docs/images/output_8_1.png)
+![png](docs/images/output_9_1.png)
 
 
-# Tree Ensemble dev project set-up
+# Decision Tree dev project set-up
 
-You can create a `tree_ensemble` anaconda enviroment with the following;
+You can create a `decision_tree` anaconda enviroment with the following;
 <pre>
-conda create -n tree_ensemble python=3.7 -y
-conda activate tree_ensemble
+conda create -n decision_tree python=3.7 -y
+conda activate decision_tree
 pip install nbdev
 pip install pandas
 pip install matplotlib
 </pre>
 
-Note: If you want to use this project to try out changes to the nbdev project, use an editable nbdev install. i.e. git clone nbdev then, `pip install -e nbdev`
+Note: If you want to use this project to try out changes to the nbdev project, use an editable nbdev install. i.e. git clone nbdev then, `pip install -e nbdev` - assuming you are in the parent folder of nbdev.
 
 ## git commands
 

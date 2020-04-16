@@ -49,17 +49,17 @@ class Aggs():
 def mse(x,y): return ((x-y)**2).mean()
 def rmse(x,y): return np.sqrt(mse(x, y))
 
-# Comes from 40_export_with_module.ipynb, cell
+# Comes from 40_test_export.ipynb, cell
 def export_from_data_to_core():
     "export to a different module"
     pass
 
-# Comes from 40_export_with_module.ipynb, cell
+# Comes from 40_test_export.ipynb, cell
 def exports_from_data_to_core():
     "exports to a different module"
     pass
 
-# Comes from 40_export_with_module.ipynb, cell
+# Comes from 40_test_export.ipynb, cell
 def exporti_from_data_to_core():
     "internal export to a different module"
     pass

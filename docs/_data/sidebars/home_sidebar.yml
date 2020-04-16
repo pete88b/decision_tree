@@ -19,11 +19,14 @@ entries:
       title: Models
       url: /models
     - output: web,pdf
-      title: Notebook to test nbdev test flags
-      url: /test_tag
+      title: Test nbdev test flags
+      url: /test_flag
     - output: web,pdf
-      title: Export with module
-      url: /export_with_module
+      title: Test nbdev export flags
+      url: /test_export
+    - output: web,pdf
+      title: Test nbdev doc flags
+      url: /test_doc
     output: web
     title: decision_tree
   output: web

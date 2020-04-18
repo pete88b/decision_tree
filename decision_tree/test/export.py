@@ -3,7 +3,7 @@
 __all__ = ['export_no_module', 'exports_no_module']
 
 # Cell
-from .core import *
+from ..core import *
 
 # Cell
 def export_no_module():
@@ -11,6 +11,7 @@ def export_no_module():
     pass
 
 # Internal Cell
+#Note: tiny bug in 03_export2html.ipynb means we can only use lower case exporti
 def exporti_no_module():
     """Doesn't really do anything."""
     pass

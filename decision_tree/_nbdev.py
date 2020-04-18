@@ -33,7 +33,7 @@ index = {"split_array": "00_core.ipynb",
 modules = ["core.py",
            "data.py",
            "models.py",
-           "export_with_module.py",
+           "test/export.py",
            "test/doc.py"]
 
 doc_url = "https://pete88b.github.io/decision_tree/"

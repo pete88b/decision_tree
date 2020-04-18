@@ -35,34 +35,6 @@ train_data, valid_data
 
 
 
-I was hoping to do a run on all of this data - but it's too slow unless we use a sub-set
-
-using prun while training a single DecisionTree tells us;
-<pre>
-18998653 function calls (18972487 primitive calls) in 18.418 seconds
-
-   Ordered by: internal time
-  
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-  8478750    5.034    0.000    5.034    0.000 core.py:28(upd)
-   261670    4.998    0.000   17.480    0.000 models.py:23(best_split_for_col)
-   645756    1.337    0.000    1.337    0.000 {method 'reduce' of 'numpy.ufunc' objects}
-   915106    1.224    0.000    2.384    0.000 core.py:21(agg_std)
-   915106    0.828    0.000    1.160    0.000 core.py:20(agg_var)
-   261670    0.579    0.000    0.579    0.000 data.py:73(get_sample)
-</pre>
-
-This is too slow to be of any use - we need to be able to train with ~half a millon rows in ~30 seconds
-
-| n_trees/sample_size | number of rows used in training | Wall time |
-|---------------------|---------------------------------|-----------|
-| 10/1500             | 1e4                             | 1.93 s    |
-| 10/20%              | 4e4                             | 10.4 s    |
-| 10/20%              | 1e5                             | 26.5 s    |
-| 10/1500             | 4e4                             | 1.87 s    |
-
-it takes ~3s to train a single tree on 10000 rows
-
 ```python
 def time_fit(n_rows, sample_size=1500, n_trees=10):
     data = train_data.tail(int(n_rows))
@@ -91,7 +63,7 @@ time_fit(1e4, 750, n_trees=50)
 
 
 
-![png](docs/images/output_8_1.png)
+![png](docs/images/output_7_1.png)
 
 
 ```python
@@ -110,7 +82,7 @@ time_fit(3125, 750)
 
 
 
-![png](docs/images/output_9_1.png)
+![png](docs/images/output_8_1.png)
 
 
 # Decision Tree dev project set-up
@@ -141,3 +113,31 @@ Note: If you want to use this project to try out changes to the nbdev project, u
 
 ### Push changes to github
 `git push`
+
+I was hoping to do a run on all of this data - but it's too slow unless we use a sub-set
+
+using prun while training a single DecisionTree tells us;
+<pre>
+18998653 function calls (18972487 primitive calls) in 18.418 seconds
+
+   Ordered by: internal time
+  
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+  8478750    5.034    0.000    5.034    0.000 core.py:28(upd)
+   261670    4.998    0.000   17.480    0.000 models.py:23(best_split_for_col)
+   645756    1.337    0.000    1.337    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+   915106    1.224    0.000    2.384    0.000 core.py:21(agg_std)
+   915106    0.828    0.000    1.160    0.000 core.py:20(agg_var)
+   261670    0.579    0.000    0.579    0.000 data.py:73(get_sample)
+</pre>
+
+This is too slow to be of any use - we need to be able to train with ~half a millon rows in ~30 seconds
+
+| n_trees/sample_size | number of rows used in training | Wall time |
+|---------------------|---------------------------------|-----------|
+| 10/1500             | 1e4                             | 1.93 s    |
+| 10/20%              | 4e4                             | 10.4 s    |
+| 10/20%              | 1e5                             | 26.5 s    |
+| 10/1500             | 4e4                             | 1.87 s    |
+
+it takes ~3s to train a single tree on 10000 rows

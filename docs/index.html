@@ -107,58 +107,6 @@ description: "A decision tree ensemble implementation (see: http://course18.fast
 </div>
     {% endraw %}
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I was hoping to do a run on all of this data - but it's too slow unless we use a sub-set</p>
-<p>using prun while training a single DecisionTree tells us;</p>
-<pre>
-18998653 function calls (18972487 primitive calls) in 18.418 seconds
-
-   Ordered by: internal time
-
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-  8478750    5.034    0.000    5.034    0.000 core.py:28(upd)
-   261670    4.998    0.000   17.480    0.000 models.py:23(best_split_for_col)
-   645756    1.337    0.000    1.337    0.000 {method 'reduce' of 'numpy.ufunc' objects}
-   915106    1.224    0.000    2.384    0.000 core.py:21(agg_std)
-   915106    0.828    0.000    1.160    0.000 core.py:20(agg_var)
-   261670    0.579    0.000    0.579    0.000 data.py:73(get_sample)
-</pre><p>This is too slow to be of any use - we need to be able to train with ~half a millon rows in ~30 seconds</p>
-<table>
-<thead><tr>
-<th>n_trees/sample_size</th>
-<th>number of rows used in training</th>
-<th>Wall time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10/1500</td>
-<td>1e4</td>
-<td>1.93 s</td>
-</tr>
-<tr>
-<td>10/20%</td>
-<td>4e4</td>
-<td>10.4 s</td>
-</tr>
-<tr>
-<td>10/20%</td>
-<td>1e5</td>
-<td>26.5 s</td>
-</tr>
-<tr>
-<td>10/1500</td>
-<td>4e4</td>
-<td>1.87 s</td>
-</tr>
-</tbody>
-</table>
-<p>it takes ~3s to train a single tree on 10000 rows</p>
-
-</div>
-</div>
-</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -307,6 +255,58 @@ pip install matplotlib
 <h3 id="Stage-all-changes">Stage all changes<a class="anchor-link" href="#Stage-all-changes"> </a></h3><p><code>git add -A</code></p>
 <h3 id="Commmit-all-staged-changes">Commmit all staged changes<a class="anchor-link" href="#Commmit-all-staged-changes"> </a></h3><p><code>git commit -m "message"</code></p>
 <h3 id="Push-changes-to-github">Push changes to github<a class="anchor-link" href="#Push-changes-to-github"> </a></h3><p><code>git push</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I was hoping to do a run on all of this data - but it's too slow unless we use a sub-set</p>
+<p>using prun while training a single DecisionTree tells us;</p>
+<pre>
+18998653 function calls (18972487 primitive calls) in 18.418 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+  8478750    5.034    0.000    5.034    0.000 core.py:28(upd)
+   261670    4.998    0.000   17.480    0.000 models.py:23(best_split_for_col)
+   645756    1.337    0.000    1.337    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+   915106    1.224    0.000    2.384    0.000 core.py:21(agg_std)
+   915106    0.828    0.000    1.160    0.000 core.py:20(agg_var)
+   261670    0.579    0.000    0.579    0.000 data.py:73(get_sample)
+</pre><p>This is too slow to be of any use - we need to be able to train with ~half a millon rows in ~30 seconds</p>
+<table>
+<thead><tr>
+<th>n_trees/sample_size</th>
+<th>number of rows used in training</th>
+<th>Wall time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/1500</td>
+<td>1e4</td>
+<td>1.93 s</td>
+</tr>
+<tr>
+<td>10/20%</td>
+<td>4e4</td>
+<td>10.4 s</td>
+</tr>
+<tr>
+<td>10/20%</td>
+<td>1e5</td>
+<td>26.5 s</td>
+</tr>
+<tr>
+<td>10/1500</td>
+<td>4e4</td>
+<td>1.87 s</td>
+</tr>
+</tbody>
+</table>
+<p>it takes ~3s to train a single tree on 10000 rows</p>
 
 </div>
 </div>

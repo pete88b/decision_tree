@@ -6,6 +6,7 @@
     "Models": "/models",
     "Test nbdev test flags": "/test_flag",
     "Test nbdev export flags": "/test_export",
-    "Test nbdev doc flags": "/test_doc"
+    "Test nbdev doc flags": "/test_doc",
+    "Test \\_all_ ": "/all_test"
   }
 }

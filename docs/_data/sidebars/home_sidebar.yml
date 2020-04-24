@@ -27,6 +27,9 @@ entries:
     - output: web,pdf
       title: Test nbdev doc flags
       url: /test_doc
+    - output: web,pdf
+      title: 'Test \_all_ '
+      url: /all_test
     output: web
     title: decision_tree
   output: web

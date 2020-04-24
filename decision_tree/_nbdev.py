@@ -15,6 +15,7 @@ index = {"split_array": "00_core.ipynb",
          "numericalize": "10_data.ipynb",
          "proc_df": "10_data.ipynb",
          "DataWrapper": "10_data.ipynb",
+         "TestClassThatDoesNothing": "10_data.ipynb",
          "Node": "20_models.ipynb",
          "best_split_for_col": "20_models.ipynb",
          "best_split": "20_models.ipynb",
@@ -34,7 +35,8 @@ modules = ["core.py",
            "data.py",
            "models.py",
            "test/export.py",
-           "test/doc.py"]
+           "test/doc.py",
+           "test/all.py"]
 
 doc_url = "https://pete88b.github.io/decision_tree/"
 

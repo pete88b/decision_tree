@@ -24,3 +24,7 @@ class AnotherTestClass():
     def a():
         "with a dummy method"
         pass
+
+# Cell
+# exports
+print('exported and shown')

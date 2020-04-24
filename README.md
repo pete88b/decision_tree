@@ -114,6 +114,9 @@ Note: If you want to use this project to try out changes to the nbdev project, u
 ### Push changes to github
 `git push`
 
+### Pull upstream changes
+https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser
+
 I was hoping to do a run on all of this data - but it's too slow unless we use a sub-set
 
 using prun while training a single DecisionTree tells us;

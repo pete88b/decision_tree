@@ -24,6 +24,20 @@ description: "Some cells to test the flags that control doc generation."
     
 <div class="cell border-box-sizing code_cell rendered">
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>exported and shown
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -222,6 +236,39 @@ description: "Some cells to test the flags that control doc generation."
 
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># this cell should be exported and shown but exports tag should be removed</span>
+<span class="c1"># exports</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;exported and shown&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>exported and shown
+</pre>
+</div>
 </div>
 
 </div>
@@ -441,6 +488,133 @@ description: "Some cells to test the flags that control doc generation."
 </div>
 
     </details>
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="combine-flags-that-control-doc-generation-and-other-flags">combine flags that control doc generation and other flags<a class="anchor-link" href="#combine-flags-that-control-doc-generation-and-other-flags"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>input should be hidden - even when used with test flag
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#hide_output</span>
+<span class="c1">#  slow</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;output should be hidden - even when used with test flag&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="nbdev-&quot;0.2.18&quot;-(pre-magic)-is-sensitive-to-the-order-of-multiple-flags">nbdev "0.2.18" (pre-magic) is sensitive to the order of multiple flags<a class="anchor-link" href="#nbdev-&quot;0.2.18&quot;-(pre-magic)-is-sensitive-to-the-order-of-multiple-flags"> </a></h3><p>works fine for <code>hide_input</code>/<code>hide_output</code> but misses the <code>hide</code> flags unless it's the 1st thing in the cell</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#slow</span>
+<span class="c1"># hide</span>
+<span class="c1">#TODO: check after migrate to flags that this cell is hidden in the docs</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;input and output should be hidden - even when used with test flag&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>input and output should be hidden - even when used with test flag
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>input should be hidden - even when used with test flag
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  slow</span>
+<span class="c1">#hide_output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;output should be hidden - even when used with test flag&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     {% endraw %}
 

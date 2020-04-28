@@ -4,4 +4,11 @@ __all__ = ['_not_included_by_default', '_not_included_by_default2']
 
 # Cell
 def _not_included_by_default(): pass
+
+# Cell
 def _not_included_by_default2(): pass
+
+# Cell
+def _not_included():
+    "not included by default and not included in `_all_`"
+    pass

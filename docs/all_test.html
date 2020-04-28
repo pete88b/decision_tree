@@ -6,6 +6,7 @@ keywords: fastai
 sidebar: home_sidebar
 
 summary: "Does it matter that \_all_ can't have line breaks?"
+description: "Does it matter that \_all_ can't have line breaks?"
 ---
 <!--
 
@@ -18,26 +19,45 @@ summary: "Does it matter that \_all_ can't have line breaks?"
 -->
 
 <div class="container" id="notebook-container">
+        
+    {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
+    {% endraw %}
+
+    {% raw %}
+    
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
+    {% endraw %}
+
+    {% raw %}
+    
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="_all_-without-line-breaks">_all_ without line breaks<a class="anchor-link" href="#_all_-without-line-breaks">&#182;</a></h2><p>Without line breaks, _all_ to __all__ works great (o:</p>
+<h2 id="_all_-without-line-breaks">_all_ without line breaks<a class="anchor-link" href="#_all_-without-line-breaks"> </a></h2><p>Without line breaks, _all_ to __all__ works great (o:</p>
 <div class="highlight"><pre><span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_not_included_by_default&#39;</span><span class="p">,</span> <span class="s1">&#39;_not_included_by_default2&#39;</span><span class="p">]</span>
 
 <span class="c1"># Cell</span>
 <span class="k">def</span> <span class="nf">_not_included_by_default</span><span class="p">():</span> <span class="k">pass</span>
 <span class="k">def</span> <span class="nf">_not_included_by_default2</span><span class="p">():</span> <span class="k">pass</span>
 </pre></div>
-<h2 id="_all_-with-line-breaks">_all_ with line breaks<a class="anchor-link" href="#_all_-with-line-breaks">&#182;</a></h2><p>With line breaks, _all_ doesn't get picked up by <code>_re_all_def</code> (... <code>([^\n\]]*) #  Catching group with anything except a ] or newline</code>)</p>
+<h2 id="_all_-with-line-breaks">_all_ with line breaks<a class="anchor-link" href="#_all_-with-line-breaks"> </a></h2><p>With line breaks, _all_ doesn't get picked up by <code>_re_all_def</code> (... <code>([^\n\]]*) #  Catching group with anything except a ] or newline</code>)</p>
 <div class="highlight"><pre><span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Cell</span>
@@ -49,6 +69,7 @@ summary: "Does it matter that \_all_ can't have line breaks?"
       <span class="s2">&quot;_not_included_by_default2&quot;</span><span class="p">]</span>
 </pre></div>
 <p>Note: <code>_re__all__def</code> uses a different catching group <code>([^\]]*)</code> that allows line breaks</p>
+<h2 id="maybe-the-answer-is-to-use-multiple-_all_-right-next-to-the-thing-we-need-to-include">maybe the answer is to use multiple <code>_all_</code> right next to the thing we need to include<a class="anchor-link" href="#maybe-the-answer-is-to-use-multiple-_all_-right-next-to-the-thing-we-need-to-include"> </a></h2><p>that's what this nb has been changed to</p>
 
 </div>
 </div>

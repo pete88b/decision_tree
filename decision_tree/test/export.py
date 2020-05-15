@@ -11,7 +11,6 @@ def export_no_module():
     pass
 
 # Internal Cell
-#Note: tiny bug in 03_export2html.ipynb means we can only use lower case exporti
 def exporti_no_module():
     """Doesn't really do anything."""
     pass

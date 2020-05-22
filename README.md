@@ -14,7 +14,7 @@ I don't think we want to create a pip install for this project ... if you're loo
 
 Load data copied from the final model used in https://github.com/fastai/fastai/tree/master/courses/ml1/lesson2-rf_interpretation.ipynb
 
-```
+```python
 bulldozers_data = np.load('test/data/bulldozers.npy', allow_pickle=True)
 train_data = DataWrapper(*bulldozers_data[:4])
 valid_data = DataWrapper(*bulldozers_data[4:])
@@ -35,7 +35,7 @@ train_data, valid_data
 
 
 
-```
+```python
 def time_fit(n_rows, sample_size=1500, n_trees=10):
     data = train_data.tail(int(n_rows))
     if sample_size<1: sample_size=int(n_rows*sample_size)
@@ -47,38 +47,38 @@ def time_fit(n_rows, sample_size=1500, n_trees=10):
     plt.scatter(test_preds, valid_data.y, alpha=.1);
 ```
 
-```
+```python
 time_fit(1e4, 750, n_trees=50)
 ```
 
-    CPU times: user 125 ms, sys: 65.9 ms, total: 191 ms
-    Wall time: 2.64 s
+    CPU times: user 135 ms, sys: 61.9 ms, total: 197 ms
+    Wall time: 2.6 s
     
      tEnsemble(data=DataWrapper(x:['YearMade' 'Coupler_System' 'ProductSize' 'fiProductClassDesc' 'ModelID'
      'saleElapsed' 'fiSecondaryDesc' 'fiModelDesc' 'Enclosure'
      'fiModelDescriptor' 'Hydraulics_Flow' 'Drive_System' 'ProductGroup'
      'Track_Type' 'state' 'saleDay' 'ProductGroupDesc' 'age'] y:SalePrice, len:10000) n_trees=50 sample_size=750 max_depth=None min_leaf_samples=5) 
     
-    loss 0.4262759962503293
+    loss 0.4471480191331508
 
 
 
 ![png](docs/images/output_7_1.png)
 
 
-```
+```python
 time_fit(3125, 750)
 ```
 
-    CPU times: user 28.8 ms, sys: 50 ms, total: 78.8 ms
-    Wall time: 585 ms
+    CPU times: user 9.28 ms, sys: 64.3 ms, total: 73.6 ms
+    Wall time: 570 ms
     
      tEnsemble(data=DataWrapper(x:['YearMade' 'Coupler_System' 'ProductSize' 'fiProductClassDesc' 'ModelID'
      'saleElapsed' 'fiSecondaryDesc' 'fiModelDesc' 'Enclosure'
      'fiModelDescriptor' 'Hydraulics_Flow' 'Drive_System' 'ProductGroup'
      'Track_Type' 'state' 'saleDay' 'ProductGroupDesc' 'age'] y:SalePrice, len:3125) n_trees=10 sample_size=750 max_depth=None min_leaf_samples=5) 
     
-    loss 0.5752066377812673
+    loss 0.5810256238591021
 
 
 
@@ -144,3 +144,109 @@ This is too slow to be of any use - we need to be able to train with ~half a mil
 | 10/1500             | 4e4                             | 1.87 s    |
 
 it takes ~3s to train a single tree on 10000 rows
+
+# nbdev testing
+
+## hide output/input
+
+```python
+#hide_output
+print('output should be hidden: hide_output')
+```
+
+```python
+#hide-output
+print('output should be hidden: hide-output')
+```
+
+    input should be hidden: hide_input
+
+
+    input should be hidden: hide-input
+
+
+## collapse
+<details class="description">
+    <summary>Code details ...</summary>
+    
+```python
+#collapse
+print('collapse')
+```
+
+</details>
+
+    collapse
+
+<details class="description" open>
+    <summary>Code details ...</summary>
+    
+```python
+#collapse_show
+print('collapse_show')
+```
+
+</details>
+
+    collapse_show
+
+<details class="description" open>
+    <summary>Code details ...</summary>
+    
+```python
+#collapse-show
+print('collapse-show')
+```
+
+</details>
+
+    collapse-show
+
+<details class="description">
+    <summary>Code details ...</summary>
+    
+```python
+#collapse_hide
+print('collapse_hide')
+```
+
+</details>
+
+    collapse_hide
+
+<details class="description">
+    <summary>Code details ...</summary>
+    
+```python
+#collapse-hide
+print('collapse-hide')
+```
+
+</details>
+
+    collapse-hide
+
+
+```python
+#collapse_output
+print('collapse_output')
+```
+<details class="description">
+    <summary>Output details ...</summary>
+    
+    collapse_output
+
+
+</details>
+
+```python
+#collapse-output
+print('collapse-output')
+```
+<details class="description">
+    <summary>Output details ...</summary>
+    
+    collapse-output
+
+
+</details>

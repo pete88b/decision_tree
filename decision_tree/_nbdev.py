@@ -2,7 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"split_array": "00_core.ipynb",
+index = {"A": "001_exports_to_target_module.ipynb",
+         "B": "001_exports_to_target_module.ipynb",
+         "split_array": "00_core.ipynb",
          "r3": "00_core.ipynb",
          "agg_var": "00_core.ipynb",
          "agg_std": "00_core.ipynb",
@@ -31,7 +33,9 @@ index = {"split_array": "00_core.ipynb",
          "exports_no_module": "40_test_export.ipynb",
          "AnotherTestClass": "50_test_doc.ipynb"}
 
-modules = ["core.py",
+modules = ["exports_to_target_module.py",
+           "target_module.py",
+           "core.py",
            "data.py",
            "models.py",
            "test/export.py",

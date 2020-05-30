@@ -1,12 +1,14 @@
 {
   "decision_tree": {
     "Overview": "/",
+    "Title": "/target_module",
     "core": "/core",
     "Data": "/data",
     "Models": "/models",
     "Test nbdev test flags": "/test_flag",
     "Test nbdev export flags": "/test_export",
     "Test nbdev doc flags": "/test_doc",
-    "Test \\_all_ ": "/all_test"
+    "Test \\_all_ ": "/all_test",
+    "Used for testing multiple \"all\" test flags": "/multi_all_test_flag"
   }
 }

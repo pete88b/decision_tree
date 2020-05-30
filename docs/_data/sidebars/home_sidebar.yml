@@ -10,6 +10,9 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
+      title: Title
+      url: /target_module
+    - output: web,pdf
       title: core
       url: /core
     - output: web,pdf
@@ -30,6 +33,9 @@ entries:
     - output: web,pdf
       title: 'Test \_all_ '
       url: /all_test
+    - output: web,pdf
+      title: Used for testing multiple "all" test flags
+      url: /multi_all_test_flag
     output: web
     title: decision_tree
   output: web

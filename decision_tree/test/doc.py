@@ -26,4 +26,5 @@ class AnotherTestClass():
         pass
 
 # Cell
+# exports
 print('exported and shown')

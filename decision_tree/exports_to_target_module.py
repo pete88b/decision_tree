@@ -3,6 +3,7 @@
 __all__ = ['A']
 
 # Cell
+
 class A:
     """The Class A."""
     def __init__(self, value):

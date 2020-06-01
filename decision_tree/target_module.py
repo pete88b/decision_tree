@@ -3,6 +3,7 @@
 __all__ = ['B']
 
 # Comes from 001_exports_to_target_module.ipynb, cell
+
 class B:
     """The Class B."""
     def __init__(self, value):

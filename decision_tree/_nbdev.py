@@ -31,7 +31,8 @@ index = {"A": "001_exports_to_target_module.ipynb",
          "export_no_module": "40_test_export.ipynb",
          "exporti_no_module": "40_test_export.ipynb",
          "exports_no_module": "40_test_export.ipynb",
-         "AnotherTestClass": "50_test_doc.ipynb"}
+         "AnotherTestClass": "50_test_doc.ipynb",
+         "Tensor.tsne": "71_tensor_patch.ipynb"}
 
 modules = ["exports_to_target_module.py",
            "target_module.py",
@@ -40,7 +41,8 @@ modules = ["exports_to_target_module.py",
            "models.py",
            "test/export.py",
            "test/doc.py",
-           "test/all.py"]
+           "test/all.py",
+           "test/tensor_patch.py"]
 
 doc_url = "https://pete88b.github.io/decision_tree/"
 

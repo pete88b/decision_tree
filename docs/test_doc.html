@@ -383,6 +383,47 @@ description: "Some cells to test the flags that control doc generation."
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open>
+      <summary data-open="Hide Code" data-close="Show Code"></summary>
+        <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-output</span>
+<span class="k">def</span> <span class="nf">demo_multi_line_of_code</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;collapse-show AND collapse-output with multiple lines of code&#39;</span><span class="p">)</span>
+<span class="n">demo_multi_line_of_code</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details><details class="description">
+      <summary data-open="Hide Output" data-close="Show Output"></summary>
+        <summary></summary>
+        
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>collapse-show AND collapse-output with multiple lines of code
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+    </details>
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 <details class="description">
       <summary data-open="Hide Code" data-close="Show Code"></summary>
         <summary></summary>
@@ -476,6 +517,41 @@ description: "Some cells to test the flags that control doc generation."
 <pre>collapse-output
 with
 multiple lines of output
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+    </details>
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The cell below hides its input and collapses output - needs a little code change to make this work</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary data-open="Hide Output" data-close="Show Output"></summary>
+        <summary></summary>
+        
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>collapse-output
+with
+multiple lines of output
+and hidden input
 </pre>
 </div>
 </div>

@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Title
-      url: /target_module
+      url: /tensor_patch
     - output: web,pdf
       title: core
       url: /core

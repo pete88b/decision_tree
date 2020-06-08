@@ -1,7 +1,7 @@
 {
   "decision_tree": {
     "Overview": "/",
-    "Title": "/target_module",
+    "Title": "/tensor_patch",
     "core": "/core",
     "Data": "/data",
     "Models": "/models",

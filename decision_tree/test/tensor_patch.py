@@ -7,6 +7,9 @@ from fastai2.torch_basics import *
 from nbdev.showdoc import *
 
 # Cell
+# TODO: xxx remove this cell after issue #171 is fixed
+
+# Cell
 @patch
 def tsne(x:Tensor, k=2, seed=47):
     "TSNE embeddings using `sklearn`"

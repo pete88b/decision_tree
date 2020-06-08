@@ -389,20 +389,18 @@ description: "Some cells to test the flags that control doc generation."
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-output</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-show</span>
 <span class="k">def</span> <span class="nf">demo_multi_line_of_code</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;collapse-show AND collapse-output with multiple lines of code&#39;</span><span class="p">)</span>
 <span class="n">demo_multi_line_of_code</span><span class="p">()</span>
+<span class="c1"># Note: nbdev does not allow both input and outout to be collapse - input gets picked up first</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-    </details><details class="description">
-      <summary data-open="Hide Output" data-close="Show Output"></summary>
-        <summary></summary>
-        
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -417,7 +415,6 @@ description: "Some cells to test the flags that control doc generation."
 </div>
 </div>
 
-    </details>
 </div>
     {% endraw %}
 

@@ -37,6 +37,9 @@ entries:
       title: 'Test \_all_ '
       url: /all_test
     - output: web,pdf
+      title: Test add to all
+      url: /test_add2__all__
+    - output: web,pdf
       title: Used for testing multiple "all" test flags
       url: /multi_all_test_flag
     - output: web,pdf

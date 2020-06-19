@@ -48,6 +48,7 @@ modules = ["exports_to_target_module.py",
            "test/doc.py",
            "test/show_doc.py",
            "test/all.py",
+           "test/add2__all__.py",
            "test/tensor_patch.py",
            "test/expif.py",
            "test/in_ipython.py"]

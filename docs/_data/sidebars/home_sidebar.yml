@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Title
-      url: /tensor_patch
+      url: /if__name__
     - output: web,pdf
       title: core
       url: /core
@@ -31,11 +31,20 @@ entries:
       title: Test nbdev doc flags
       url: /test_doc
     - output: web,pdf
+      title: Test show_doc
+      url: /test_show_doc
+    - output: web,pdf
       title: 'Test \_all_ '
       url: /all_test
     - output: web,pdf
       title: Used for testing multiple "all" test flags
       url: /multi_all_test_flag
+    - output: web,pdf
+      title: tensor patch
+      url: /tensor_patch
+    - output: web,pdf
+      title: '`IN_IPYTHON` can be True when running in plain python'
+      url: /in_ipython
     output: web
     title: decision_tree
   output: web

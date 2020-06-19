@@ -2,8 +2,8 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"A": "001_exports_to_target_module.ipynb",
-         "B": "001_exports_to_target_module.ipynb",
+index = {"A": "51_test_show_doc.ipynb",
+         "B": "51_test_show_doc.ipynb",
          "split_array": "00_core.ipynb",
          "r3": "00_core.ipynb",
          "agg_var": "00_core.ipynb",
@@ -32,8 +32,10 @@ index = {"A": "001_exports_to_target_module.ipynb",
          "exporti_no_module": "40_test_export.ipynb",
          "exports_no_module": "40_test_export.ipynb",
          "AnotherTestClass": "50_test_doc.ipynb",
+         "c": "51_test_show_doc.ipynb",
+         "A.NestedA.e": "51_test_show_doc.ipynb",
+         "d": "51_test_show_doc.ipynb",
          "Tensor.tsne": "71_tensor_patch.ipynb",
-         "except": "72_if__name__.ipynb",
          "in_ipython": "73_in_ipython.ipynb",
          "in_ipython2": "73_in_ipython.ipynb"}
 
@@ -44,6 +46,7 @@ modules = ["exports_to_target_module.py",
            "models.py",
            "test/export.py",
            "test/doc.py",
+           "test/show_doc.py",
            "test/all.py",
            "test/tensor_patch.py",
            "test/expif.py",

@@ -5,8 +5,8 @@ title: Test add to all
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Testing `%nbdev_add2__all__` and showing how it works."
-description: "Testing `%nbdev_add2__all__` and showing how it works."
+summary: "Testing `%nbdev_add2all` and showing how it works."
+description: "Testing `%nbdev_add2all` and showing how it works."
 ---
 <!--
 
@@ -52,7 +52,7 @@ description: "Testing `%nbdev_add2__all__` and showing how it works."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>%nbdev_add2__all__</code> can work with anything that could come after <code>_all_=</code>.</p>
+<p><code>%nbdev_add2all</code> can work with anything that could come after <code>_all_=</code>.</p>
 <p>You can use square brackets ...</p>
 
 </div>
@@ -66,7 +66,7 @@ description: "Testing `%nbdev_add2__all__` and showing how it works."
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">_not_included_by_default2</span><span class="p">():</span> <span class="k">pass</span>
-<span class="o">%</span><span class="k">nbdev_add2__all__</span> [&quot;_not_included_by_default2&quot;]
+<span class="o">%</span><span class="k">nbdev_add2all</span> [&quot;_not_included_by_default2&quot;]
 </pre></div>
 
     </div>
@@ -92,7 +92,7 @@ description: "Testing `%nbdev_add2__all__` and showing how it works."
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It's still true that only the first <code>_all_</code> or <code>%nbdev_add2__all__</code> gets picked up by export</p>
+<p>It's still true that only the first <code>_all_</code> or <code>%nbdev_add2all</code> gets picked up by export</p>
 
 </div>
 </div>
@@ -121,7 +121,7 @@ description: "Testing `%nbdev_add2__all__` and showing how it works."
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>UsageError: List of names is missing. Usage `%nbev_add2__all__ name_1, name_2`
+<pre>UsageError: List of names is missing. Usage `%nbdev_add2all name_1, name_2`
 </pre>
 </div>
 </div>
@@ -212,10 +212,10 @@ description: "Testing `%nbdev_add2__all__` and showing how it works."
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As before, only zero indented flags get picked up.</p>
-<p>In the following example, <code>show_doc</code> would not be added to <code>__all__</code> and the module would be broken - because we export everything after <code>%nbdev_export</code> (including <code>%nbdev_add2__all__ show_doc</code>)</p>
+<p>In the following example, <code>show_doc</code> would not be added to <code>__all__</code> and the module would be broken - because we export everything after <code>%nbdev_export</code> (including <code>%nbdev_add2all show_doc</code>)</p>
 <div class="highlight"><pre><span></span><span class="o">%</span><span class="n">nbdev_export</span>
 <span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="o">%</span><span class="n">nbdev_add2__all__</span> <span class="n">show_doc</span>
+    <span class="o">%</span><span class="n">nbdev_add2all</span> <span class="n">show_doc</span>
     <span class="n">_all_</span><span class="o">=</span><span class="p">[</span><span class="n">show_doc</span><span class="p">]</span>
 </pre></div>
 

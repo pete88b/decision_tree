@@ -33,7 +33,6 @@ def before_test(nb):
     things_to_exclude = ['notebook2script']
     cells = [(i,c,e) for i,(c,e) in enumerate(zip(nb['cells'],exports)) if c['cell_type']=='code']
     for i,c,e in cells:
-        if 'test_y' in c['source']:print('xxx: for i,c,e in cells\n',c['source'],'\n',i,e,'\n\n')
         if e: 
             c['cell_type']='exclude'             # if it's exported to the library, don't run as test
             for line in split_flags_and_code(c): # but we might still need to run import statements
@@ -70,7 +69,6 @@ for o in dir({b}):
 
 # until then ... we need to duplicate a few chunks of nbdev
 def _test_nb(fn, flags=None):
-    print('MINE')
     "Execute tests in notebook in `fn` with `flags`"
     os.environ["IN_TEST"] = '1'
     if flags is None: flags = []

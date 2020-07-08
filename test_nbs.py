@@ -62,12 +62,12 @@ for o in dir({b}):
 # i.e. use a before test callback that does nothing
 # def before_test(nb): return nb
 
-# If nbdev.test.test_nb had a "before test" callback, the rest of this script could be just the following 3 lines
+# If nbdev.test.test_nb knew to call our "before test" callback, the rest of this script could be just the following 3 lines
 # def test_run():
 #     from nbdev.cli import nbdev_test_nbs
 #     nbdev_test_nbs.__wrapped__()
 
-# until then ... we need to duplicate a few chunks of nbdev
+# until it does ... we need to duplicate a few chunks of nbdev
 def _test_nb(fn, flags=None):
     "Execute tests in notebook in `fn` with `flags`"
     os.environ["IN_TEST"] = '1'
@@ -124,5 +124,5 @@ def nbdev_test_nbs(fname=None,flags=None,n_workers=None,verbose=True,timing=Fals
 
 def test_run():
     # now we can "nbdev_test_nbs" and have our "before test" callback called
-    nbdev_test_nbs('00_core.ipynb')
-    # nbdev_test_nbs()
+    # nbdev_test_nbs('00_core.ipynb') # Use this line to test a single notebook
+    nbdev_test_nbs()

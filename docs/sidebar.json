@@ -13,6 +13,7 @@
     "Test add to all": "/test_add2__all__",
     "Used for testing multiple \"all\" test flags": "/multi_all_test_flag",
     "tensor patch": "/tensor_patch",
-    "`IN_IPYTHON` can be True when running in plain python": "/in_ipython"
+    "`IN_IPYTHON` can be True when running in plain python": "/in_ipython",
+    "Creating code coverage reports for an nbdev project": "/test_coverage"
   }
 }

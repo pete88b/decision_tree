@@ -13,9 +13,6 @@ __all__ = ['Tree', 'annotations']
 
 # Cell
 # borrowed from https://realpython.com/python37-new-features/
-
-#nbdev_comment from __future__ import annotations
-
 class Tree:
     def __init__(self, left: Tree, right: Tree) -> None:
         self.left = left
@@ -26,3 +23,4 @@ class Tree:
 #nbdev_comment from __future__ import generator_stop
 
 # Cell
+# this is just here to demo nb->lib and lib->nb when using add2all

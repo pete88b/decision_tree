@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Title
-      url: /if__name__
+      url: /from_future_import
     - output: web,pdf
       title: core
       url: /core

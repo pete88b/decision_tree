@@ -38,6 +38,7 @@ index = {"A": "51_test_show_doc.ipynb",
          "Tensor.tsne": "71_tensor_patch.ipynb",
          "in_ipython": "73_in_ipython.ipynb",
          "in_ipython2": "73_in_ipython.ipynb",
+         "Tree": "74_from_future_import.ipynb",
          "write_imports": "80_test_coverage.ipynb",
          "write_test_cell_callback": "80_test_coverage.ipynb",
          "write_test_cells": "80_test_coverage.ipynb",
@@ -56,6 +57,7 @@ modules = ["exports_to_target_module.py",
            "test/tensor_patch.py",
            "test/expif.py",
            "test/in_ipython.py",
+           "test/from_future.py",
            "testcoverage.py"]
 
 doc_url = "https://pete88b.github.io/decision_tree/"

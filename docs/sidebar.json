@@ -1,7 +1,7 @@
 {
   "decision_tree": {
     "Overview": "/",
-    "Title": "/if__name__",
+    "Title": "/from_future_import",
     "core": "/core",
     "Data": "/data",
     "Models": "/models",
